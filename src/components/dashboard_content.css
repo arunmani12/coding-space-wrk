@@ -1,0 +1,179 @@
+.container{
+  background-color: #192032;
+  position: absolute;
+  height: 100%;
+  overflow-y: scroll;
+  /* width: 82%; */
+  margin-top: 100px;
+  /* margin-left: 17%; */
+  margin-left: 78px;
+  display: grid;
+  gap:0.8rem;
+}
+
+.first_contain{
+  display: flex;
+  flex-wrap: wrap;
+  gap:0.8rem;
+  margin:1px;
+}
+
+
+.sub_first_contain{
+  width: 383px;
+height: 130px;
+border-radius: 5px;
+background-image:url("./images/bg.png");
+display: flex;
+flex-wrap: nowrap;
+gap:0.8rem;
+
+
+
+  
+}
+.title_container{
+  margin:15px;
+  width:250px;
+  
+}
+.title_container1{
+  margin:25px;
+  width:230px;
+
+}
+
+.title_container,.title_container1 h3{
+  color:#b9caed;
+}
+.title_container p{
+  color:#5eb64b;
+}
+
+.icon_container{
+  margin-top: 30px;
+  margin-left: 13px;
+}
+.icon_container1{
+  margin-top: 23px;
+  margin-left: 2px;
+}
+
+.png_size{
+  width: 60px;
+  height: 60px;
+}
+.png_size1{
+  width: 80px;
+  height: 80px;
+}
+
+
+
+
+.second_contain{
+  display: flex;
+  flex-wrap: wrap;
+  gap:0.5rem;
+  margin:1px;
+  
+}
+
+.sub_second_contain{
+  width: 288px;
+height: 180px;
+background: #222840;
+border-radius: 5px;
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+align-items: center;
+
+
+}
+
+.icon_cont1{
+  background: #eca438;
+  border-radius: 100%;
+  height:30px;
+  width:30px;
+  margin:12px;
+  padding: 1rem;
+}
+
+.icon_cont2{
+  background: #023ea8;
+  border-radius: 100%;
+  height:30px;
+  width:30px;
+  margin:12px;
+  padding: 1rem;
+  color:white;
+}
+
+.icon_cont3{
+  background: #e73029;
+  border-radius: 100%;
+  height:30px;
+  width:30px;
+  margin:12px;
+  padding: 1rem;
+}
+
+.icon_modify{
+  size: 5px;
+}
+
+
+
+
+.title_subcontainer{
+  text-align: center;
+  margin:-13px;
+}
+.title_subcontainer p{
+  color:#b9caed;
+}
+.title_subcontainer h3{
+  color:#5eb64b;
+}
+
+
+.up-nav{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-main{
+  width: 50%;
+  /* background-color: yellow; */
+}
+
+.left-main h3{
+  margin-top: 65px;
+  margin-left: 10px;
+  color:  #b9caed;
+}
+
+.right-main{
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.right-main i{
+  color:  #b9caed;
+  font-size: 22px;
+  margin-left: 10px;
+}
+
+.pic{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 20px;
+}

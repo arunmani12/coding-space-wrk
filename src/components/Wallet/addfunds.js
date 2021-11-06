@@ -1,7 +1,8 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
-import Money from './images/money-bag.png';
+// import Money from 'http://localhost:3000//money-bag.png';
 import './addfunds.css'
-import UpBar from "./UpBar";
+import UpBar from "../Home/UpBar";
 
 const Addfunds = () =>{
     return(
@@ -24,8 +25,8 @@ const Addfunds = () =>{
                     <br/>
                     <p className="title_contain1">
                     Note: Once you press Submit, The system will show you the Tron Address to Transfer and the Required Amount of Trons to Transfer. Once you transfer,
-                    your wallet will be loaded automatically after the required number of confirmations. It may take some time for confirmations.
-                     Please send the exact amount of Coins shown in the next page
+    your wallet will be loaded automatically after the required number of confirmations. It may take some time for confirmations.
+    Please send the exact amount of Coins shown in the next page
                     </p>
                 </div>
                

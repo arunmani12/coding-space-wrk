@@ -1,0 +1,81 @@
+.tron_container{
+    position: absolute;
+    background-color: #22273d;
+    margin-top: 7%;
+    margin-left: 6%;
+    width:93%;
+    height:56%;
+    border-radius: 5px;
+
+}
+.tron_title{
+    color: #8698b1;
+    margin-left:25px;
+    margin-top: 2px;
+}
+
+.tron_form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap:15px;
+    height:50%;
+    margin-left: 3%;
+}
+
+.tron_list{
+    display:flex;
+    flex-direction: row;
+    gap:115px;
+}
+
+.title,.title1{
+    width:125px;
+    height:1.8rem;
+    color:#8698b1;
+    font-size:smaller;
+    place-content:center;
+    font-weight:500;
+
+}
+.title1{
+    width:140px;
+    margin-top:6px;
+}
+
+.tron_ipbox{
+    width:80%;
+    height:1.8rem;
+    background-color: #191e31;
+    border: 1px solid #383d54;
+    border-radius: 3px;
+    color:#8698b1;
+    font-size: smaller;
+}
+
+.otp_btn,.submit_btn{
+    background-color: #4eb32b;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 3px 2px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+
+.submit_btn{
+    background-color:#023ea8;
+    margin-left: 47%;
+    margin-top: -10px;
+}
+.notes{
+    margin:20px;
+    font-size:large;
+    color:#8698b1;
+    font-weight: 400;
+}

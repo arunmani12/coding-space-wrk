@@ -1,0 +1,14 @@
+[
+    {
+        "type": "C",
+        "transactionAt": "2021-11-11T14:51:20.972+00:00",
+        "amount": 100,
+        "message": "TOPUP_DONE"
+    },
+    {
+        "type": "C",
+        "transactionAt": "2021-11-11T14:55:29.086+00:00",
+        "amount": 100,
+        "message": "TOPUP_DONE"
+    }
+]

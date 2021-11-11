@@ -1,0 +1,30 @@
+.profile_container {
+  background-color: #22273d;
+  border-radius: 5px;
+  width: 100%;
+  padding: 1.5rem 0;
+}
+.profile_title {
+  color: #8698b1;
+  padding: 1.5rem;
+}
+.form_list {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 1.5rem;
+}
+.form_title {
+  width: 200px;
+  color: #8698b1;
+  font-weight: 600;
+  font-size: 20px;
+}
+.form_box {
+  background-color: #191e31;
+  border: 1px solid #383d54;
+  padding: 0.5rem 1rem;
+  color: #8698b1;
+  font-size: 16px;
+  width: 100%;
+}

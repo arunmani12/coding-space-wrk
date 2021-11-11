@@ -1,0 +1,60 @@
+.walletChange {
+  background-color: #22273d;
+  border-radius: 3px;
+  padding: 1.5rem 0;
+}
+.walletChange_title {
+  color: #8698b1;
+  padding: 1.5rem;
+  font-size: 24px;
+}
+
+.walletChange_list {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0.5rem 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  width: 200px;
+  color: #8698b1;
+  font-weight: 600;
+  font-size: 20px;
+}
+.title1 {
+  width: 160px;
+  color: #8698b1;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.walletChange_ipbox {
+  background-color: #191e31;
+  border: 1px solid #383d54;
+  padding: 0.5rem 1rem;
+  color: #8698b1;
+  font-size: 16px;
+  width: 100%;
+}
+
+.otp_btn,
+.submit_btn {
+  background-color: #4eb32b;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 2px;
+  font-size: 16px;
+}
+
+.submit_btn {
+  background-color: #023ea8;
+}
+.notes {
+  margin: 20px;
+  font-size: 14px;
+  color: #8698b1;
+  font-weight: 400;
+}

@@ -1,0 +1,41 @@
+.activationWallet {
+  background-color: #22273d;
+  border-radius: 3px;
+  padding: 1.5rem;
+}
+
+h3 {
+  color: #b9caed;
+  margin: 0px;
+}
+.title_contain2 p {
+  color: #b9caed;
+  font-weight: 500;
+}
+
+#customers {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#customers td,
+#customers th {
+  border: none;
+}
+
+#customers tr:nth-child(even) {
+  background-color: #f2f2f200;
+  color: #b9caed;
+  font-weight: 500;
+  border: 1px solid #b9caed2e;
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(8, 64, 177);
+  color: white;
+}

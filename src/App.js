@@ -1,101 +1,48 @@
-import './App.css';
-import Dashboard_content from './components/Home/Dashboard_content';
-import Direct from './components/Home/Direct';
-import Change_password from './components/Home/Password';
-import Profile from './components/Home/Profile';
-import Tron_address from './components/Home/Tron';
-import NavBar from './components/NavBar';
-import Addfunds from './components/Wallet/addfunds';
-import Pendingdepo from './components/Wallet/pendingdepo';
-import Transfer from './components/Wallet/transfer';
-import WalletChange from './components/Wallet/wallet_change';
-import ActivationWallet from './components/Wallet/activation_wallet'
+import React, { useState } from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
-
-
+import "./App.css";
+import DashboardContent from "./pages/Home/DashboardContent";
+import DirectReferrals from "./pages/Team/DirectReferrals";
+import ChangePassword from "./pages/Home/ChangePassword";
+import Profile from "./pages/Home/Profile";
+import BankAddress from "./pages/Home/BankAddress";
+import AddFunds from "./pages/Wallet/AddFunds";
+import PendingDepo from "./pages/Wallet/PendingDepo";
+import Transfer from "./pages/Wallet/Transfer";
+import WalletChange from "./pages/Wallet/WalletChange";
+import ActivationWallet from "./pages/Wallet/ActivationWallet";
+import Login from "./pages/Login/Login";
+import NavBar from "./components/NavBar";
+import TopBar from "./components/TopBar";
 
 function App() {
+  const [user, setUser] = useState("");
+  const [isShrink, setIsShrink] = useState(false);
+
+  const handleShrink = () => setIsShrink(!isShrink);
+
+  if (user) return <Route path="/login" exact component={Login} />;
+
   return (
     <Router>
-       <Switch>
-          <Route path="/" exact>
-                 <div className='main-div'>
-                   <NavBar/>
-                    <Dashboard_content/>
-                  </div>
-          </Route>
-
-          <Route path="/Direct" exact>
-               <div className='main-div'>
-              <NavBar/>
-               <Direct/>
-               </div>
-          </Route>
-
-          <Route path="/change_password" exact>
-               <div className='main-div'>
-              <NavBar/>
-               <Change_password/>
-               </div>
-          </Route>
-
-          <Route path="/profile" exact>
-               <div className='main-div'>
-              <NavBar/>
-             <Profile/>
-               </div>
-          </Route>
-
-          <Route path="/tron_address" exact>
-               <div className='main-div'>
-              <NavBar/>
-               <Tron_address/>
-               </div>
-          </Route>
-
-          <Route path="/addfunds" exact>
-               <div className='main-div'>
-             <NavBar/>
-               <Addfunds/>
-               </div>
-          </Route>
-
-          <Route path="/pendingdepo" exact>
-               <div className='main-div'>
-             <NavBar/>
-               <Pendingdepo/>
-               </div>
-          </Route>
-          <Route path="/transfer" exact>
-               <div className='main-div'>
-             <NavBar/>
-               <Transfer/>
-               </div>
-          </Route>
-          <Route path="/wallet-change" exact>
-               <div className='main-div'>
-             <NavBar/>
-               <WalletChange/>
-               </div>
-          </Route>
-          <Route path="/activation-wallet" exact>
-               <div className='main-div'>
-             <NavBar/>
-               <ActivationWallet/>
-               </div>
-          </Route>
-
-
-    </Switch>
+      <div className="main-container">
+        <NavBar isShrink={isShrink} />
+        <div className={`${isShrink ? "right--shrink" : "right"}`}>
+          <TopBar handleShrink={handleShrink} />
+          <Route path="/" exact component={DashboardContent} />
+          <Route path="/direct-referrals" exact component={DirectReferrals} />
+          <Route path="/change-password" exact component={ChangePassword} />
+          <Route path="/profile" exact component={Profile} />
+          <Route path="/bank-address" exact component={BankAddress} />
+          <Route path="/add-funds" exact component={AddFunds} />
+          <Route path="/pending=depo" exact component={PendingDepo} />
+          <Route path="/transfer" exact component={Transfer} />
+          <Route path="/wallet-change" exact component={WalletChange} />
+          <Route path="/activation-wallet" exact component={ActivationWallet} />
+        </div>
+      </div>
     </Router>
- 
-  
   );
 }
 

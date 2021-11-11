@@ -1,13 +1,3 @@
-.profile_container {
-  background-color: #22273d;
-  border-radius: 5px;
-  width: 100%;
-  padding: 1.5rem 0;
-}
-.profile_title {
-  color: #8698b1;
-  padding: 1.5rem;
-}
 .form_list {
   display: flex;
   align-items: center;

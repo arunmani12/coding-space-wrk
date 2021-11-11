@@ -15,4 +15,6 @@
 }
 .right--shrink {
   flex: 0.95;
+  overflow: auto;
+  padding: 1rem;
 }

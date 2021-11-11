@@ -1,9 +1,15 @@
+.topUpHistory h4 {
+  padding: 1.5rem;
+  font-size: 24px;
+}
+
 select {
   width: 80px;
   height: 30px;
   background-color: #191e31;
   margin: 0 0.5rem;
 }
+
 input {
   background-color: #191e31;
   height: 30px;
@@ -18,7 +24,7 @@ input {
   justify-content: space-between;
   padding: 0 1.5rem;
 }
-.directReferrals_footer {
+.topUpHistory_footer {
   display: flex;
   justify-content: space-between;
   align-items: center;

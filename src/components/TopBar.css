@@ -5,7 +5,9 @@
   align-items: center;
   justify-content: space-between;
 }
-
+.pointer {
+  cursor: pointer;
+}
 .right-main {
   display: flex;
   align-items: center;

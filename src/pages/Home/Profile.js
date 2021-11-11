@@ -3,10 +3,8 @@ import "./Profile.css";
 
 const Profile = () => {
   return (
-    <div class="profile_container">
-      <div class="profile_title">
-        <h4>Member profile</h4>
-      </div>
+    <div class="card-container">
+      <h4 className="page-title">Member profile</h4>
       <div>
         <div class="form_list">
           <label class="form_title">UserID</label>

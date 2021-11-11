@@ -8,6 +8,7 @@
 .left--shrink {
   flex: 0.05;
   transition: all 0.4s ease-in;
+  background: #0c1420;
 }
 .logo--shrink {
   font-size: 10px;

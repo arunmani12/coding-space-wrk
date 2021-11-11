@@ -3,34 +3,18 @@ import "./ActivationWallet.css";
 
 const ActivationWallet = () => {
   return (
-    <div className="activationWallet">
-      <h3>Activation Wallet Report of 707123 (Balance - TRX 0.00) </h3>
-      <table id="customers">
+    <div className="card-container">
+      <h4 className="page-title">
+        Activation Wallet Report of 707123 (Balance - TRX 0.00){" "}
+      </h4>
+      <table>
         <tr>
-          <th>
-            Serial <i class="fas fa-caret-down"></i>{" "}
-            <i class="fas fa-caret-up"></i>
-          </th>
-          <th>
-            TxnID <i class="fas fa-caret-down"></i>{" "}
-            <i class="fas fa-caret-up"></i>
-          </th>
-          <th>
-            Date/Time <i class="fas fa-caret-down"></i>{" "}
-            <i class="fas fa-caret-up"></i>
-          </th>
-          <th>
-            Amount <i class="fas fa-caret-down"></i>{" "}
-            <i class="fas fa-caret-up"></i>
-          </th>
-          <th>
-            Address <i class="fas fa-caret-down"></i>{" "}
-            <i class="fas fa-caret-up"></i>
-          </th>
-          <th>
-            Status <i class="fas fa-caret-down"></i>{" "}
-            <i class="fas fa-caret-up"></i>
-          </th>
+          <th>Serial</th>
+          <th>TxnID</th>
+          <th>Date/Time</th>
+          <th>Amount</th>
+          <th>Address</th>
+          <th>Status</th>
         </tr>
         <tr>
           <td>1</td>

@@ -7,10 +7,8 @@ const Change_password = () => {
   };
 
   return (
-    <div class="pass_container">
-      <div class="pass_title">
-        <h4>Change Password</h4>
-      </div>
+    <div class="card-container">
+      <h4 className="page-title">Change Password</h4>
       <form onSubmit={handleSubmit} class="pass_form">
         <div class="pass_list">
           <label class="title">Old Password</label>

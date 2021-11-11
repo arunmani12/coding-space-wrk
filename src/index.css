@@ -37,3 +37,31 @@ code {
 ::-webkit-scrollbar-thumb:hover {
   background: white;
 }
+.card-container {
+  background-color: #2a3542;
+  border-radius: 3px;
+  padding: 1.5rem 0;
+  color: #b9caed;
+}
+.page-title {
+  padding: 1.5rem;
+  font-size: 24px;
+}
+table {
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+}
+th {
+  background-color: #013da8;
+}
+th,
+td {
+  padding: 1rem;
+}
+tr {
+  background-color: rgb(31, 30, 30);
+  color: #b9caed;
+  font-weight: 500;
+}

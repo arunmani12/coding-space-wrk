@@ -1,11 +1,11 @@
 import React from "react";
 
-import "./DirectReferrals.css";
+import "./BinaryDetails.css";
 
-const DirectReferrals = () => {
+const BinaryDetails = () => {
   return (
     <div className="card-container">
-      <h4 className="page-title">Direct referals of 707183</h4>
+      <h4 className="page-title">Binary Details of 707183</h4>
       <div className="searchDiv">
         <div>
           Display <select></select> Records Per Page
@@ -20,14 +20,12 @@ const DirectReferrals = () => {
         <thead>
           <tr>
             <th>Serial</th>
-            <th>User ID</th>
-            <th>Name</th>
-            <th>Joined On</th>
-            <th>Mobile</th>
-            <th>Email</th>
-            <th>Placement</th>
-            <th>Team</th>
-            <th>Amount</th>
+            <th>Date</th>
+            <th>Left Value</th>
+            <th>Right Value</th>
+            <th>Matched</th>
+            <th>Ceiling</th>
+            <th>Paring Income</th>
           </tr>
         </thead>
         <tbody>
@@ -39,12 +37,10 @@ const DirectReferrals = () => {
             <td>23433</td>
             <td>23433</td>
             <td>23433</td>
-            <td>23433</td>
-            <td>$400</td>
           </tr>
         </tbody>
       </table>
-      <div className="directReferrals_footer">
+      <div className="binaryDetails_footer">
         <p className="endName">Showing page 1 of 1</p>
         <div className="button-group">
           <button className="previous-btn">Previous</button>
@@ -56,4 +52,4 @@ const DirectReferrals = () => {
   );
 };
 
-export default DirectReferrals;
+export default BinaryDetails;

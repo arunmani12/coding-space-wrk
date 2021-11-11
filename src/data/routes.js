@@ -6,7 +6,7 @@ import {
   BsPersonFill,
   BsWallet,
 } from "react-icons/bs";
-import { AiOutlineEdit, AiOutlineMail, AiOutlineTeam } from "react-icons/ai";
+import { AiOutlineEdit, AiOutlineTeam } from "react-icons/ai";
 
 const links = [
   {
@@ -27,7 +27,11 @@ const links = [
       },
       {
         title: "Change Password",
-        link: "change-password",
+        link: "/change-password",
+      },
+      {
+        title: "Notice Board",
+        link: "/notice-board",
       },
     ],
   },
@@ -35,10 +39,6 @@ const links = [
     title: "Team",
     Icon: AiOutlineTeam,
     subLinks: [
-      {
-        title: "Package View",
-        asp: "certificate.asp",
-      },
       {
         title: "Direct Referrals",
         link: "/direct-referrals",
@@ -49,10 +49,12 @@ const links = [
   {
     title: "Binary Details",
     Icon: BsFillFileEarmarkBinaryFill,
+    link: "/binary-details",
   },
   {
     title: "Referral Link",
     Icon: BsLink45Deg,
+    link: "/referral-link",
   },
   {
     title: "Wallet",
@@ -60,7 +62,7 @@ const links = [
     subLinks: [
       { title: "Add Funds", link: "/add-funds" },
       { title: "Pending Deposits", link: "/pending-depo" },
-      { title: "Transfer", link: "/transfer" },
+      { title: "Transfer Points", link: "/transfer-points" },
       {
         title: "Wallet Change",
         link: "/wallet-change",
@@ -73,42 +75,22 @@ const links = [
     title: "Packages",
     Icon: FiPackage,
     subLinks: [
-      { title: "Top Up", asp: "editprofilemember.asp" },
-      { title: "My Top ups", asp: "editprofilemember.asp" },
-    ],
-  },
-  {
-    title: "Mail Box",
-    Icon: AiOutlineMail,
-    subLinks: [
-      {
-        title: "Compose",
-        asp: "editprofilemember.asp",
-      },
-      {
-        title: "Send Items",
-        asp: "editprofilemember.asp",
-      },
-      {
-        title: "Inbox",
-        asp: "editprofilemember.asp",
-      },
+      { title: "Top Up", link: "/topUp" },
+      { title: "TopUp History", link: "/topUp-history" },
     ],
   },
   {
     title: "Withdraw",
     Icon: AiOutlineEdit,
-    subLinks: [
-      {
-        title: "Withdraw",
-        asp: "editprofilemember.asp",
-      },
-      { title: "Withdraw Report", asp: "editprofilemember.asp" },
-    ],
+    subLinks: [{ title: "Withdraw Report", link: "/withdraw-report" }],
   },
   {
     title: "Registration",
     Icon: BsPersonFill,
+    subLinks: [
+      { title: "Top-up Registration", link: "/topUp-registration" },
+      { title: "Top-up List", link: "/topUp-list" },
+    ],
   },
   {
     title: "Log Out",

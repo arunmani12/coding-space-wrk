@@ -1,0 +1,21 @@
+.form-topup {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+.form-group-topup {
+}
+.form-label-topup {
+  width: 200px;
+}
+.form-input-topup {
+  margin-left: 1rem;
+  width: 200px;
+  color: white;
+  font-size: 1rem;
+}
+.btn_model {
+  padding: 0.5rem 2rem;
+}

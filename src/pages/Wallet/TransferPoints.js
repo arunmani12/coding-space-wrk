@@ -1,39 +1,37 @@
 import React from "react";
 
-import "./WalletChange.css";
+import "./TransferPoints.css";
 
-const WalletChange = () => {
+const TransferPoints = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
   };
 
   return (
     <div className="card-container">
-      <h4 className="page-title">
-        Transfer Points to Activation Wallet (Cash Wallet Balance 56.00)
-      </h4>
+      <h4 className="page-title">Transfer Points (wallet Balance $1000.00)</h4>
       <form onSubmit={handleSubmit}>
-        <div class="walletChange_list">
+        <div class="transfer_list">
           <label class="title">Reciever UserID</label>
-          <input type="text" class="walletChange_ipbox" />
+          <input type="text" class="transfer_ipbox" />
         </div>
-        <div class="walletChange_list">
-          <label class="title">Amount to walletChange</label>
-          <input type="text" class="walletChange_ipbox" />
+        <div class="transfer_list">
+          <label class="title">Amount to Transfer</label>
+          <input type="text" class="transfer_ipbox" />
         </div>
-        <div class="walletChange_list">
+        <div class="transfer_list">
           <label class="title1">Get OTP</label>
           <button type="button" className="otp_btn">
             Generate OTP
           </button>
         </div>
-        <div class="walletChange_list">
+        <div class="transfer_list">
           <label class="title">OTP Reference No.</label>
-          <input type="text" class="walletChange_ipbox" />
+          <input type="text" class="transfer_ipbox" />
         </div>
-        <div class="walletChange_list">
+        <div class="transfer_list">
           <label class="title">Enter OTP</label>
-          <input type="text" class="walletChange_ipbox" />
+          <input type="text" class="transfer_ipbox" />
         </div>
       </form>
       <div className="btn_container">
@@ -52,4 +50,4 @@ const WalletChange = () => {
     </div>
   );
 };
-export default WalletChange;
+export default TransferPoints;

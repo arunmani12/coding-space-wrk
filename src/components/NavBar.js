@@ -27,11 +27,12 @@ const NavBar = ({ isShrink }) => {
         </div>
       </div>
       <div className="bottom">
-        {links.map(({ Icon, title, subLinks }) => (
+        {links.map(({ Icon, title, subLinks, link }) => (
           <NavLink
             Icon={Icon}
             title={title}
             subLinks={subLinks}
+            link={link}
             isShrink={isShrink}
             isShrinkCss={isShrinkCss}
           />

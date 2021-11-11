@@ -9,7 +9,7 @@ export default function TopBar({ handleShrink }) {
     <>
       <div className="up-nav">
         <div className="left-main">
-          <AiOutlineMenu className="setting" onClick={handleShrink} />
+          <AiOutlineMenu className="setting pointer" onClick={handleShrink} />
         </div>
         <div className="right-main">
           <AiOutlineCalendar className="spacing" size="24px" />

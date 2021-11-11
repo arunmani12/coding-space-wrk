@@ -1,0 +1,22 @@
+.noticeBoard-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1.5rem;
+}
+.noticeBoard-item {
+  width: 250px;
+  height: 250px;
+  background: #013da8;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.noticeBoard-icon {
+  margin-bottom: 1rem;
+}
+.noticeBoard-title {
+  font-size: 20px;
+  font-weight: 600;
+}

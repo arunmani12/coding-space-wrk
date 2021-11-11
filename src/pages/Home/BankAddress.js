@@ -8,10 +8,8 @@ const Tron_address = () => {
   };
 
   return (
-    <div class="bank_container">
-      <div class="bank_title">
-        <h4>Update Bank Address</h4>
-      </div>
+    <div class="card-container">
+      <h4 className="page-title">Update Bank Address</h4>
       <form onSubmit={handleSubmit} class="bank_form">
         <div class="bank_list">
           <label class="title">Enter New Bank Address</label>

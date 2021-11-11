@@ -5,7 +5,14 @@ import { Link } from "react-router-dom";
 
 import "./NavLink.css";
 
-const NavLink = ({ Icon, subLinks = false, title, isShrink, isShrinkCss }) => {
+const NavLink = ({
+  Icon,
+  subLinks = false,
+  title,
+  isShrink,
+  isShrinkCss,
+  link,
+}) => {
   const [isExpand, setIsExpand] = useState(false);
 
   const handleExpand = () => setIsExpand(!isExpand);
@@ -16,10 +23,17 @@ const NavLink = ({ Icon, subLinks = false, title, isShrink, isShrinkCss }) => {
         className={`${isShrinkCss("item-container")}`}
         onClick={handleExpand}
       >
-        <div className="item">
-          <Icon className="icon" />
-          {!isShrink && <p>{title}</p>}
-        </div>
+        {link ? (
+          <Link to={link} className="item link">
+            <Icon className="icon" />
+            {!isShrink && <p>{title}</p>}
+          </Link>
+        ) : (
+          <div className="item">
+            <Icon className="icon" />
+            {!isShrink && <p>{title}</p>}
+          </div>
+        )}
         {!isShrink ? (
           subLinks ? (
             isExpand ? (
